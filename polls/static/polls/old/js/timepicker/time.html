@@ -1,0 +1,36 @@
+<html>
+	<link rel="stylesheet" media="all" type="text/css" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="jquery-ui-timepicker-addon.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="jquery-ui-timepicker-addon.js"></script>
+	<script type="text/javascript" src="jquery-ui-sliderAccess.js"></script>
+	
+	
+	<div class="example-container">
+						<p>Add a simple datetimepicker to jQuery UI's datepicker</p>
+						<div>
+					 		<input type="text" name="basic_example_1" id="basic_example_1" value="" />
+						</div>					
+<pre>
+	<script>
+$('#basic_example_1').datetimepicker();
+</script>
+</pre>
+					</div>
+					<div class="example-container">
+						<p>Set the min/max hour of every date:</p>
+						<div>
+					 		<input type="text" name="rest_example_1" id="rest_example_1" value="" />
+						</div>					
+<pre>
+$('#rest_example_1').timepicker({
+	hourMin: 8,
+	hourMax: 16
+});
+</pre>
+					</div>
+
+	
+	
+</html>

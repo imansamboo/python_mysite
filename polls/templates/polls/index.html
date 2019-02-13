@@ -1,0 +1,356 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+<title>
+    Roles-Permissions Manager
+</title>
+
+<meta http-equiv="X-UA-Compatible"
+      content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0"
+      name="viewport"/>
+<meta http-equiv="Content-type"
+      content="text/html; charset=utf-8">
+
+<!-- Tell the browser to be responsive to screen width -->
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="{% static 'polls/css/font-awesome.min.css' %}">
+<!-- Ionicons -->
+<link rel="stylesheet" href="{% static 'polls/css/ionicons.min.css' %}">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="{% static 'polls/js/html5shiv.min.js' %}"></script>
+<script src="{% static 'polls/js/respond.min.js' %}"></script>
+<![endif]-->
+
+<link href="{% static 'polls/adminlte/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'polls/adminlte/css/select2.min.css' %}"/>
+<link href="{% static 'polls/adminlte/css/AdminLTE.min.css' %}" rel="stylesheet">
+<link href="{% static 'polls/adminlte/css/skins/skin-blue.min.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'polls/css/jquery-ui.css' %}">
+<link rel="stylesheet" href="{% static 'polls/css/jquery.dataTables.min.css' %}"/>
+<link rel="stylesheet" href="{% static 'polls/css/select.dataTables.min.css' %}"/>
+<link rel="stylesheet" href="{% static 'polls/css/buttons.dataTables.min.css' %}"/>
+<link rel="stylesheet" href="{% static 'polls/css/jquery-ui-timepicker-addon.min.css' %}"/>
+<link rel="stylesheet" href="{% static 'polls/css/bootstrap-datepicker.standalone.min.css' %}"/></head>
+
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+<div id="wrapper">
+
+<header class="main-header">
+    <!-- Logo -->
+    <a href="http://172.17.106.203:8000/admin/home" class="logo"
+       style="font-size: 16px;">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini">
+           Roles-Permissions Manager</span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg">
+           Roles-Permissions Manager</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+        
+
+    </nav>
+</header>
+
+
+<!-- Left side column. contains the sidebar -->
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <ul class="sidebar-menu">
+
+            <li class="">
+                <a href="http://172.17.106.203:8000">
+                    <i class="fa fa-wrench"></i>
+                    <span class="title">Dashboard</span>
+                </a>
+            </li>
+            
+                        <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-users"></i>
+                    <span class="title">User Management</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+
+                    <li class="">
+                        <a href="http://172.17.106.203:8000/admin/permissions">
+                            <i class="fa fa-briefcase"></i>
+                            <span class="title">
+                                Permissions                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="http://172.17.106.203:8000/admin/roles">
+                            <i class="fa fa-briefcase"></i>
+                            <span class="title">
+                                Roles                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="http://172.17.106.203:8000/admin/users">
+                            <i class="fa fa-user"></i>
+                            <span class="title">
+                                Users                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+                        
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-users"></i>
+                    <span class="title">CRUD MANAGEMENT</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+
+                    <li class="">
+                        <a href="http://172.17.106.203:8000/admin/migration-field-types">
+                            <i class="fa fa-briefcase"></i>
+                            <span class="title">
+                                migration-field-types
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="http://172.17.106.203:8000/admin/form-field-types">
+                            <i class="fa fa-briefcase"></i>
+                            <span class="title">
+                                form-field-types
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="http://172.17.106.203:8000/admin/view-options">
+                            <i class="fa fa-briefcase"></i>
+                            <span class="title">
+                                view-options
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="http://172.17.106.203:8000/admin/model-options">
+                            <i class="fa fa-briefcase"></i>
+                            <span class="title">
+                                model-options
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="http://172.17.106.203:8000/admin/crud-options">
+                            <i class="fa fa-briefcase"></i>
+                            <span class="title">
+                                crud-options
+                            </span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </li>
+            
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-users"></i>
+                    <span class="title">CRUD GENERATOR</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+
+                    <li class="">
+                        <a href="http://172.17.106.203:8000/cruds/create">
+                            <i class="fa fa-briefcase"></i>
+                            <span class="title">
+                                Create Migration
+                            </span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="">
+                <a href="http://172.17.106.203:8000/ques">
+                    <i class="fa fa-key"></i>
+                    <span class="title">Ques</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="http://172.17.106.203:8000/extensions">
+                    <i class="fa fa-key"></i>
+                    <span class="title">Extensions</span>
+                </a>
+            </li>
+
+            <li class="">
+                <a href="http://172.17.106.203:8000/change_password">
+                    <i class="fa fa-key"></i>
+                    <span class="title">Change password</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#logout" onclick="$('#logout').submit();">
+                    <i class="fa fa-arrow-left"></i>
+                    <span class="title">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+</aside>
+<form method="POST" action="http://172.17.106.203:8000/logout" accept-charset="UTF-8" style="display:none;" id="logout"><input name="_token" type="hidden" value="VssVnB1ot4vV3xyDDZoHJC1kjuMgRKwEDIN17qb6">
+<button type="submit">global.logout</button>
+</form>
+
+<!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Main content -->
+        <section class="content">
+            
+            <div class="row">
+                <div class="col-md-12">
+
+                                        
+
+                        <div class="container">
+        <div class="row">
+
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header">Migrationfieldtypes</div>
+                    <div class="card-body">
+                        <a href="http://172.17.106.203:8000/admin/migration-field-types/create" class="btn btn-success btn-sm" title="Add New MigrationFieldType">
+                            <i class="fa fa-plus" aria-hidden="true"></i> Add New
+                        </a>
+
+                        <form method="GET" action="http://172.17.106.203:8000/admin/migration-field-types" accept-charset="UTF-8" class="form-inline my-2 my-lg-0 float-right" role="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="search" placeholder="Search..." value="">
+                                <span class="input-group-append">
+                                    <button class="btn btn-secondary" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+
+                        <br/>
+                        <br/>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th><th>Title</th><th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>1</td>
+                                        <td>enum</td>
+                                        <td>
+                                            <a href="http://172.17.106.203:8000/admin/migration-field-types/96" title="View MigrationFieldType"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
+                                            <a href="http://172.17.106.203:8000/admin/migration-field-types/96/edit" title="Edit MigrationFieldType"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
+
+                                            <form method="POST" action="http://172.17.106.203:8000/admin/migration-field-types/96" accept-charset="UTF-8" style="display:inline">
+                                                <input type="hidden" name="_method" value="DELETE">
+                                                <input type="hidden" name="_token" value="VssVnB1ot4vV3xyDDZoHJC1kjuMgRKwEDIN17qb6">
+                                                <button type="submit" class="btn btn-danger btn-sm" title="Delete MigrationFieldType" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>2</td>
+                                        <td>tinyint</td>
+                                        <td>
+                                            <a href="http://172.17.106.203:8000/admin/migration-field-types/90" title="View MigrationFieldType"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
+                                            <a href="http://172.17.106.203:8000/admin/migration-field-types/90/edit" title="Edit MigrationFieldType"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
+
+                                            <form method="POST" action="http://172.17.106.203:8000/admin/migration-field-types/90" accept-charset="UTF-8" style="display:inline">
+                                                <input type="hidden" name="_method" value="DELETE">
+                                                <input type="hidden" name="_token" value="VssVnB1ot4vV3xyDDZoHJC1kjuMgRKwEDIN17qb6">
+                                                <button type="submit" class="btn btn-danger btn-sm" title="Delete MigrationFieldType" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>3</td>
+                                        <td>smallint</td>
+                                        <td>
+                                            <a href="http://172.17.106.203:8000/admin/migration-field-types/91" title="View MigrationFieldType"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
+                                            <a href="http://172.17.106.203:8000/admin/migration-field-types/91/edit" title="Edit MigrationFieldType"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
+
+                                            <form method="POST" action="http://172.17.106.203:8000/admin/migration-field-types/91" accept-charset="UTF-8" style="display:inline">
+                                                <input type="hidden" name="_method" value="DELETE">
+                                                <input type="hidden" name="_token" value="VssVnB1ot4vV3xyDDZoHJC1kjuMgRKwEDIN17qb6">
+                                                <button type="submit" class="btn btn-danger btn-sm" title="Delete MigrationFieldType" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                                                </tbody>
+                            </table>
+                            <div class="pagination-wrapper">  </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<form method="POST" action="http://172.17.106.203:8000/logout" accept-charset="UTF-8" style="display:none;" id="logout"><input name="_token" type="hidden" value="VssVnB1ot4vV3xyDDZoHJC1kjuMgRKwEDIN17qb6">
+<button type="submit">Logout</button>
+</form>
+
+<script src="{% static 'polls/js/pdfmake.min.js' %}"></script>
+<script src="{% static 'polls/js/vfs_fonts.js' %}"></script>
+<script src="{% static 'polls/js/buttons.html5.min.js' %}"></script>
+<script src="{% static 'polls/js/buttons.print.min.js' %}"></script>
+<script src="{% static 'polls/js/buttons.colVis.min.js' %}"></script>
+<script src="{% static 'polls/js/dataTables.select.min.js' %}"></script>
+<script src="{% static 'polls/js/jquery-ui.min.js' %}"></script>
+<script src="{% static 'polls/adminlte/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'polls/adminlte/js/select2.full.min.js' %}"></script>
+<script src="{% static 'polls/adminlte/js/main.js' %}"></script>
+
+<script src="{% static 'polls/adminlte/plugins/slimScroll/jquery.slimscroll.min.js' %}"></script>
+<script src="{% static 'polls/adminlte/plugins/fastclick/fastclick.js' %}"></script>
+<script src="{% static 'polls/adminlte/js/app.min.js' %}"></script>
+<script>
+    window._token = 'VssVnB1ot4vV3xyDDZoHJC1kjuMgRKwEDIN17qb6';
+</script>

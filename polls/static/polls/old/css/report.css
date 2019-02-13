@@ -1,0 +1,163 @@
+/*
+
+Hello soldier! :D
+
+*/
+
+html {
+    overflow-y: hidden;    always display vertical-scrollbar in ff 
+}
+
+.htmlreport html {
+        overflow-y: auto;
+}
+body, input, select, textarea, p, div {
+    font: 12px/1.6em Tahoma, DejaVuSans, sans-serif;
+ /*   margin:0;
+    padding:0;*/
+}
+hr {
+    height: 1px;
+    border-right:0;
+    border-left:0;
+    border-top: 1px dashed #ccc;
+    border-bottom:0;
+}
+
+/* td {
+    vertical-align: top !important;
+} */
+
+/*ul {
+}*/
+
+.calendar {
+    direction: rtl;
+}
+
+#flat_calendar_1, #flat_calendar_2{
+    width: 200px;
+}
+.example {
+    padding: 10px;
+}
+
+.display_area {
+    background-color: #FFFF88
+}
+
+h2 {
+
+    font-weight: 600;
+    font-size: 15px;
+    margin-top:0;
+    padding-top:0;
+}
+
+fieldset {
+    border-color: #C9D8E1;
+    border-width: 1px;
+    border-style: solid;
+    padding: 17px;
+    padding-bottom: 10px;
+    margin-top:10px;
+    margin-right:10px;
+    margin-left:10px;
+}
+
+fieldset legend {
+    padding: 0 10px;
+    color: #31C952;
+    font-size: 13px;
+}
+
+legend span {
+    color: #F8A815;
+}
+
+.submit-button {
+    color: #E63E00;
+    padding: 0 7px;
+    cursor: pointer;
+}
+
+.header td {
+    background: #91C6CF;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.row-data {
+    color: #4F3042;
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+#ajax_loading, #ajax_content {
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+
+fieldset .padder {
+    padding: 20px;
+}
+
+fieldset center {
+    color: #777;
+}
+
+table.form-container {
+width:100%;background:#fff;border: 1px solid #ddd
+}
+
+
+
+td.even-row-label-container {
+    background: #e5e5e5;
+    color:#555;
+    text-align:left;
+    font-size:12px;
+    width: 150px;
+}
+
+td.even-row-field-container {
+    background: #f7f7f7;
+}
+
+
+td.odd-row-label-container {
+    background: #d0d0d0;
+    color:#555;
+    text-align:left;
+    font-size:12px;
+    width: 150px;
+}
+
+td.odd-row-field-container {
+    background: #eee;
+}
+
+
+/* player by ebrahim */
+    .clearfix:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+    .k-grid td * {vertical-align: middle;}
+    .voicePlayer {direction:ltr;}
+    .voicePlayer .timebar {background:#D0D0D0;}
+    .voicePlayer .timebar span {padding:0px 5px; display: inherit; color:#000; letter-spacing:1px;}
+    .voicePlayer .voicePlayerWave {border:1px solid #D0D0D0;}
+    .voicePlayer .voicePlayerControls {background:#EFEFEF;}
+    .voicePlayer .voicePlayerControls button {background-color:transparent; background-repeat:no-repeat; background-position:center; border:0; margin:2px 1px; border:1px solid #AFB0B3; width:30px; height:30px;}
+    .voicePlayer .voicePlayerControls .btn-play {background-image:url(../img/player_play.png);}
+    .voicePlayer .voicePlayerControls .btn-pause {background-image:url(../img/player_pause.png);}
+    .voicePlayer .voicePlayerControls .btn-close {background-image:url(../img/player_close.png);}
+    .voicePlayer .voicePlayerControls .btn-mute {background-image:url(../img/player_mute.png);}
+    .voicePlayer .voicePlayerControls .btn-unmute {background-image:url(../img/player_unmute.png);}

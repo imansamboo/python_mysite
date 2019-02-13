@@ -1,0 +1,160 @@
+.k-textbox {
+	width: 11.8em;
+}
+
+#sms-add {
+	width: 850px;
+	height: 501px;
+	/*margin: 30px auto;*/
+	padding: 10px 20px 20px 170px;
+	background: url('/pcc/app/webroot/js/kendoui/shared/images/sms_add.png') transparent no-repeat 132px 1px;
+}
+
+#sms-account {
+	width: 850px;
+	height: 550px;
+	/*margin: 30px auto;*/
+	padding: 10px 20px 20px 170px;
+	background: url('/pcc/app/webroot/js/kendoui/shared/images/sms_account.png') transparent no-repeat 132px 1px;
+}
+
+#sms-account-search {
+	width: 850px;
+	height: 100px;
+	/*margin: 30px auto;*/
+	/*padding: 10px 20px 20px 170px;*/
+	/*background: url('/pcc/app/webroot/js/kendoui/shared/images/sms_account.png') transparent no-repeat 132px 1px;*/
+}
+
+
+#sms-account {
+	width: 850px;
+	height: 550px;
+	/*margin: 30px auto;*/
+	padding: 10px 20px 20px 170px;
+	background: url('/pcc/app/webroot/js/kendoui/shared/images/sms_account.png') transparent no-repeat 132px 1px;
+}
+
+
+#sms-search {
+	width: 850px;
+	height: 371px;
+	/*margin: 30px auto;*/
+	padding: 10px 20px 20px 170px;
+	background: url('/pcc/app/webroot/js/kendoui/shared/images/sms.png') transparent no-repeat 132px 0;
+}
+
+#sms-blacklist {
+	width: 850px;
+	height: 371px;
+	/*margin: 30px auto;*/
+	padding: 10px 20px 20px 170px;
+	background: url('/pcc/app/webroot/js/kendoui/shared/images/sms.png') transparent no-repeat 132px 0;
+}
+
+
+#tickets h3 {
+	font-weight: normal;
+	font-size: 1.4em;
+	border-bottom: 1px solid #ccc;
+	width : 641px;
+	padding-right:17px;
+	padding-top:1px;
+}
+
+#tickets ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#tickets li {
+	margin: 10px 0 0 0;
+}
+
+label {
+	display: inline-block;
+	width: 90px;
+	text-align: right;
+}
+
+.required {
+	font-weight: bold;
+	color: green;
+}
+
+.accept, .status {
+	padding-left: 90px;
+}
+
+.valid {
+	color: green;
+}
+
+.invalid {
+	color: red;
+}
+span.k-tooltip {
+	margin-left: 6px;
+}
+
+
+p
+{
+	padding: 25px;
+	margin: 25px auto;
+	width: 450px;
+}
+.ui-widget-header
+{
+	text-align: center;
+	font-weight: normal;
+}
+.ui-state-active
+{
+	display: block;
+	padding: 3px;
+	text-align: center;
+}
+
+/* div sample */
+
+#table {
+	display: table;
+                border: 0px;
+	float: right;
+	/*width: 576px;*/
+	width: 650px;
+	font-weight: bold;
+	padding-right:10px;
+	
+}
+
+#row  {
+	display: block;
+                border: 0px;                
+	float: right;
+	padding-top:10px;
+	width:100%;
+}
+
+#cell-right {
+	display: block;	
+                border: 0px;
+	float: right;
+	padding-right:10px;
+}
+#cell-left {
+	display: table-cell;
+                border: 0px;
+	float: right;
+	padding-right:2px;
+	width:500px;
+}
+
+#cell-middle {
+	display: table-cell;
+                border: 1px solid #FF00FF;              
+	float: right;
+	padding-right:50px;
+}
+

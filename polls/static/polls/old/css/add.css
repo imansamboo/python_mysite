@@ -1,0 +1,36 @@
+html{
+		font-family: Verdana, Tahoma, Sans-Serif;
+		font-size: .8em;
+	}
+td, th, th a,p {
+	/*font: 11px/1.6em DejaVuSans,Tahoma, Nesf2, Nesf, sans-serif;*/
+}
+th, th a {
+	background: #369;
+	color: #fff;
+	font-size: 16px;
+}
+th,th a {
+	font-weight: 600;
+}
+.message, #authMessage {
+	text-align: center;
+	direction: rtl;
+	background: #c00;
+	color: #fff;
+	padding :10px;
+	border: 1px solid #000;
+}
+fieldset legend {
+	background:#FFFFFF none repeat scroll 0 0;
+	color:#EE3322;
+	font-size:100%;
+	font-weight:bold;
+}
+
+
+.showbody{
+
+width:100%;
+
+}
